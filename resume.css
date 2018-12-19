@@ -3,6 +3,8 @@ body {
     font-family: 'Fira Sans', sans-serif;
     background-image: linear-gradient(white, gray);
     height: 100%;
+    position: absolute;
+    display: flex;
 }
 
 div.a4page {
@@ -13,7 +15,7 @@ div.a4page {
     background: #ffffff;
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: absolute;
+    position: relative;
     top:0;
     bottom: 0;
     left: 0;
@@ -91,14 +93,26 @@ ul {
 }
 
 .section-header > .section-company {
-    font-weight: 800;
+    font-weight: 400;
     text-align: left;
 }
 
 .section-header > .section-location {
     font-size: small;
-    font-weight: 81;
+    font-weight: 200;
     text-align: right;
+}
+
+.section-header . .section-name {
+    font-size: medium;
+    font-weight: 200;
+    text-align: left;
+}
+
+.section-header . .section-link {
+    font-size: small;
+    font-weight: 200;
+    text-align: left;
 }
 
 .main-section-entry > .section-job-title {
