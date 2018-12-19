@@ -1,0 +1,138 @@
+body {
+    margin: 0 auto;
+    font-family: 'Fira Sans', sans-serif;
+    background-image: linear-gradient(white, gray);
+    height: 100%;
+}
+
+div.a4page {
+    max-width: 1188px;
+    max-height 840px;
+    align: center;
+    margin: 0 auto;
+    background: #ffffff;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h3 {
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: small;
+}
+
+.page-title-header {
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    background: #555555;
+    color: #fafafa;
+}
+
+.page-content {
+    padding-right: 10px;
+}
+
+.sidebar-page {
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-gap: 20px;
+}
+
+.sidebar-page > .left-sidebar {
+    padding-left: 10px;
+}
+
+.sidebar-page > .left-sidebar > h3 {
+    text-align: right;
+    padding-bottom: 0 auto;
+}
+
+.sidebar-page > .main-content {
+    display: flex;
+    flex-flow: column;
+}
+
+.main-content > .main-section-entry {
+    width: 100%;
+}
+
+.main-section-entry > .section-header {
+    display: grid;
+    grid-template-columns: 6fr 15fr 10fr;
+    grid-gap: 5px;
+    padding-left: 10px;
+}
+
+/* AAAAAAAAA */
+.main-content > .main-section-entry > .section-header:not(:first-of-type) {
+    padding-top: 30px;
+}
+
+.section-header > .section-date {
+    font-size: small;
+    font-weight: 81;
+}
+
+.section-header > .section-company {
+    font-weight: 800;
+    text-align: left;
+}
+
+.section-header > .section-location {
+    font-size: small;
+    font-weight: 81;
+    text-align: right;
+}
+
+.main-section-entry > .section-job-title {
+    font-size: small;
+    font-weight: 81;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.main-section-entry > .section-description {
+    font-size: small;
+    padding-left: 10em;
+    align: center;
+    text-align: left;
+    width: 70%;
+}
+.leftright-page {
+    width:100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    display: grid;
+    align-items: center;
+    /*
+     *flex-flow: row;
+     */
+}
+
+.leftright-page > .left {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.leftright-page > .right {
+    padding-right: 20px;
+    text-align: right;
+}
