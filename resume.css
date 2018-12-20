@@ -1,26 +1,57 @@
+@media print {
+    html{
+        width: 8.5in;
+        height: 11in;
+        margin: 0
+        /*
+         *margin: 30mm 45mm 30mm 45mm; 
+         */
+        /* change the margins as you want them to be. */
+    } 
+    .leftcol,.rightcol {
+         display: none;
+    }
+   
+    div.a4page {
+        align: center;
+        margin: 0;
+        background: #ffffff;
+        position: relative;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+    }
+}
+
+@media screen {
+    html {
+        height: 100%;
+    }
+    div.a4page {
+        max-width: 1188px;
+        align: center;
+        margin: 0 auto;
+        background: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: relative;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 1%;
+    }
+}
+
 body {
     margin: 0 auto;
     font-family: 'Fira Sans', sans-serif;
     background-image: linear-gradient(white, gray);
     height: 100%;
-    position: absolute;
-    display: flex;
+    position: relative;
 }
 
-div.a4page {
-    max-width: 1188px;
-    max-height 840px;
-    align: center;
-    margin: 0 auto;
-    background: #ffffff;
-    height: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: relative;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 
 h1 {
     font-size: xx-large;
@@ -38,7 +69,7 @@ ul {
 }
 
 .page-title-header {
-    position: sticky;
+    position: relative;
     top: 0;
     margin: 0 auto;
     width: 100%;
@@ -48,6 +79,7 @@ ul {
 
 .page-content {
     padding-right: 10px;
+    position: relative;
 }
 
 .sidebar-page {
@@ -84,7 +116,7 @@ ul {
 
 /* AAAAAAAAA */
 .main-content > .main-section-entry > .section-header:not(:first-of-type) {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .section-header > .section-date {
