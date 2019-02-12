@@ -1,4 +1,10 @@
 @media print {
+    @page {
+        margin-top: 0cm;
+        margin-bottom: 0cm;
+        margin-left: 0cm;
+        margin-right: 0cm;
+    }
     html{
         width: 8.5in;
         height: 11in;
@@ -11,6 +17,15 @@
     .leftcol,.rightcol {
          display: none;
     }
+
+    .page-title-header {
+        position: relative;
+        top: 0;
+        margin: 0 auto;
+        width: 100%;
+        background: #ffffff;
+        color: #fafafa;
+    }
    
     div.a4page {
         align: center;
@@ -22,6 +37,13 @@
         left: 0;
         right: 0;
         height: 100%;
+    }
+    div.section-link {
+        display: none;
+    }
+    a {
+        color: #000000;
+        text-decoration: none;
     }
 }
 
