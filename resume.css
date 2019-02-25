@@ -64,6 +64,10 @@
         right: 0;
         padding-bottom: 1%;
     }
+    /* make the "find me online" link invisible when viewing online. */
+    #print-link {
+        display: none;
+    }
 }
 
 body {
