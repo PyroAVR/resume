@@ -140,6 +140,10 @@ ul {
     padding-left: 10px;
 }
 
+.section-header span.date {
+    display: block;
+}
+
 /* AAAAAAAAA */
 .main-content > .main-section-entry > .section-header:not(:first-of-type) {
     padding-top: 10px;
