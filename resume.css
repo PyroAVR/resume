@@ -1,4 +1,4 @@
-@media print {
+@media only print {
     @page {
         margin-top: 0cm;
         margin-bottom: 0cm;
@@ -8,7 +8,7 @@
     html{
         width: 8.5in;
         height: 11in;
-        margin: 0
+        margin: 0;
         /*
          *margin: 30mm 45mm 30mm 45mm; 
          */
@@ -32,11 +32,12 @@
         margin: 0;
         background: #ffffff;
         position: relative;
-        top:0;
+        top: 0;
         bottom: 0;
         left: 0;
         right: 0;
         height: 100%;
+        grid-column: 1 / 6;
     }
     div.section-link {
         display: none;
@@ -47,7 +48,7 @@
     }
 }
 
-@media screen {
+@media only screen {
     html {
         height: 100%;
     }
@@ -63,6 +64,7 @@
         left: 0;
         right: 0;
         padding-bottom: 1%;
+        grid-column: 2 / 5;
     }
     /* make the "find me online" link invisible when viewing online. */
     #print-link {
@@ -71,6 +73,9 @@
 }
 
 body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0px;
     margin: 0 auto;
     font-family: 'Fira Sans', sans-serif;
     background-image: linear-gradient(white, gray);
