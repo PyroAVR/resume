@@ -1,59 +1,43 @@
-@media only print {
-    @page {
-        margin-top: 0cm;
-        margin-bottom: 0cm;
-        margin-left: 0cm;
-        margin-right: 0cm;
-    }
-    html{
-        width: 8.5in;
-        height: 11in;
-        margin: 0;
-        /*
-         *margin: 30mm 45mm 30mm 45mm; 
-         */
-        /* change the margins as you want them to be. */
-    } 
-    .leftcol,.rightcol {
-         display: none;
-    }
-
-    .page-title-header {
-        position: relative;
-        top: 0;
-        margin: 0 auto;
-        width: 100%;
-        background: #ffffff;
-        color: #fafafa;
-    }
-   
-    div.a4page {
-        align: center;
-        margin: 0;
-        background: #ffffff;
-        position: relative;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        grid-column: 1 / 6;
-    }
-    div.section-link {
-        display: none;
-    }
-    a {
-        color: #000000;
-        text-decoration: none;
-    }
-}
-
-@media only screen {
+@media only screen and (width <= 8.5in) {
     html {
         height: 100%;
     }
     div.a4page {
-        max-width: 1188px;
+        max-width: 8.5in;
+        align: center;
+        margin: 0 auto;
+        background: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: relative;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 1%;
+    }
+    /* make the "find me online" link invisible when viewing online. */
+    #print-link {
+        display: none;
+    }
+    body {
+        display: inline;
+        margin: 0 auto;
+        font-family: 'Fira Sans', sans-serif;
+        background-image: linear-gradient(white, gray);
+        height: 100%;
+        position: relative;
+    }
+    .leftcol,.rightcol {
+         display: none;
+    }
+}
+
+@media only screen and (width > 8.5in) {
+    html {
+        height: 100%;
+    }
+    div.a4page {
+        max-width: 8.5in;
         align: center;
         margin: 0 auto;
         background: #ffffff;
@@ -70,19 +54,29 @@
     #print-link {
         display: none;
     }
+    .background-image {
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://www.tripsavvy.com/thmb/7Sp-hbTMterzg49RKp0LMUP8y9Y=/2119x1415/filters:fill(auto,1)/MontBlancGettyIWestend61-59329c745f9b589eb44e83cf.jpg');
+        filter: blur(5px);
+    }
+    body {
+        display: inline;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 0px;
+        margin: 0 auto;
+        font-family: 'Fira Sans', sans-serif;
+        /*
+         *background-image: linear-gradient(white, gray);
+         */
+        height: 100%;
+        position: relative;
+    }
 }
-
-body {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 0px;
-    margin: 0 auto;
-    font-family: 'Fira Sans', sans-serif;
-    background-image: linear-gradient(white, gray);
-    height: 100%;
-    position: relative;
-}
-
 
 h1 {
     font-size: xx-large;
@@ -216,4 +210,64 @@ ul {
 .leftright-page > .right {
     padding-right: 20px;
     text-align: right;
+}
+
+@media only print {
+    @page {
+        size: 8.5in 11in;
+        margin-top: 0cm;
+        margin-bottom: 0cm;
+        margin-left: 0cm;
+        margin-right: 0cm;
+    }
+    html{
+        width: 8.5in;
+        height: 11in;
+        margin: 0;
+        /*
+         *margin: 30mm 45mm 30mm 45mm; 
+         */
+        /* change the margins as you want them to be. */
+    } 
+    body {
+        display: inline;
+        margin: 0 auto;
+        font-family: 'Fira Sans', sans-serif;
+        height: 100%;
+        position: relative;
+    }
+    .leftcol,.rightcol {
+         display: none;
+    }
+
+    .page-title-header {
+        position: relative;
+        top: 0;
+        margin: 0 auto;
+        width: 100%;
+        background: #ffffff;
+        color: #fafafa;
+    }
+   
+    div.a4page {
+        align: center;
+        margin: 0;
+        background: #ffffff;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-height: 11in;
+    }
+    div.page-title-header {
+        padding-bottom: 0;
+    }
+    div.section-link {
+        display: none;
+    }
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
 }
