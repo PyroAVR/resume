@@ -1,3 +1,65 @@
+@media only print {
+    @page {
+        size: 8.5in 11in;
+        margin-top: 0cm;
+        margin-bottom: 0cm;
+        margin-left: 0cm;
+        margin-right: 0cm;
+    }
+    html{
+        width: 8.5in;
+        height: 11in;
+        margin: 0;
+        /*
+         *margin: 30mm 45mm 30mm 45mm; 
+         */
+        /* change the margins as you want them to be. */
+    } 
+    body {
+        display: inline;
+        margin: 0 auto;
+        font-family: 'Fira Sans', sans-serif;
+        height: 100%;
+        position: relative;
+    }
+    .leftcol,.rightcol {
+         display: none;
+    }
+
+    .page-title-header {
+        position: fixed;
+        top: 0;
+        margin: 0 auto;
+        width: 100%;
+        /*
+         *background: #ffffff;
+         */
+        color: #fafafa;
+    }
+   
+    div.a4page {
+        align: center;
+        margin: 0;
+        background: #ffffff;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-height: 11in;
+    }
+    div.page-title-header {
+        padding-bottom: 0;
+    }
+    div.section-link {
+        display: none;
+    }
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+}
+
 @media only screen and (width <= 8.5in) {
     html {
         height: 100%;
@@ -47,7 +109,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        padding-bottom: 1%;
+        padding-bottom: 10%;
         grid-column: 2 / 5;
     }
     /* make the "find me online" link invisible when viewing online. */
@@ -63,6 +125,7 @@
         height: 100%;
         background-image: url('https://www.tripsavvy.com/thmb/7Sp-hbTMterzg49RKp0LMUP8y9Y=/2119x1415/filters:fill(auto,1)/MontBlancGettyIWestend61-59329c745f9b589eb44e83cf.jpg');
         filter: blur(5px);
+        transform: scale(1.2);
     }
     body {
         display: inline;
@@ -119,7 +182,7 @@ ul {
 }
 
 .sidebar-page > .left-sidebar > h3 {
-    text-align: right;
+    text-align: left;
     padding-bottom: 0 auto;
 }
 
@@ -134,18 +197,18 @@ ul {
 
 .main-section-entry > .section-header {
     display: grid;
-    grid-template-columns: 6fr 15fr 10fr;
+    grid-template-columns: 8fr 8fr 4fr;
     grid-gap: 5px;
     padding-left: 10px;
 }
 
 .section-header span.date {
-    display: block;
+    display: inline;
 }
 
 /* AAAAAAAAA */
 .main-content > .main-section-entry > .section-header:not(:first-of-type) {
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 .section-header > .section-date {
@@ -185,7 +248,7 @@ ul {
 
 .main-section-entry > .section-description {
     font-size: small;
-    padding-left: 10em;
+    padding-left: 5em;
     align: center;
     text-align: left;
     width: 70%;
@@ -212,62 +275,10 @@ ul {
     text-align: right;
 }
 
-@media only print {
-    @page {
-        size: 8.5in 11in;
-        margin-top: 0cm;
-        margin-bottom: 0cm;
-        margin-left: 0cm;
-        margin-right: 0cm;
-    }
-    html{
-        width: 8.5in;
-        height: 11in;
-        margin: 0;
-        /*
-         *margin: 30mm 45mm 30mm 45mm; 
-         */
-        /* change the margins as you want them to be. */
-    } 
-    body {
-        display: inline;
-        margin: 0 auto;
-        font-family: 'Fira Sans', sans-serif;
-        height: 100%;
-        position: relative;
-    }
-    .leftcol,.rightcol {
-         display: none;
-    }
-
-    .page-title-header {
-        position: relative;
-        top: 0;
-        margin: 0 auto;
-        width: 100%;
-        background: #ffffff;
-        color: #fafafa;
-    }
-   
-    div.a4page {
-        align: center;
-        margin: 0;
-        background: #ffffff;
-        position: relative;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        max-height: 11in;
-    }
-    div.page-title-header {
-        padding-bottom: 0;
-    }
-    div.section-link {
-        display: none;
-    }
-    a {
-        color: #000000;
-        text-decoration: none;
-    }
+.section-description > ul {
+    padding-left: 0;
 }
+
+.left-sidebar > ul {
+    padding-left: 10px;
+    text-align: left;
