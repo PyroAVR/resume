@@ -84,8 +84,7 @@
     body {
         display: inline;
         margin: 0 auto;
-        font-family: 'Fira Sans', sans-serif;
-        background-image: linear-gradient(white, gray);
+        font-family: 'Fira Sans';
         height: 100%;
         position: relative;
     }
@@ -132,7 +131,7 @@
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 0px;
         margin: 0 auto;
-        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Fira Sans';
         /*
          *background-image: linear-gradient(white, gray);
          */
@@ -282,3 +281,4 @@ ul {
 .left-sidebar > ul {
     padding-left: 10px;
     text-align: left;
+}
