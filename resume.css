@@ -99,7 +99,9 @@ body { display: none;}
         height: 100%;
     }
     div.a4page {
-        max-width: 8.5in;
+        /*
+         *max-width: 8.5in;
+         */
         align: center;
         margin: 0 auto;
         background: #ffffff;
@@ -110,7 +112,7 @@ body { display: none;}
         left: 0;
         right: 0;
         padding-bottom: 10%;
-        grid-column: 2 / 5;
+        grid-column: 2 / 10;
     }
     /* make the "find me online" link invisible when viewing online. */
     #print-link {
@@ -129,8 +131,8 @@ body { display: none;}
         transform: scale(1.2);
     }
     body {
-        display: inline;
-        grid-template-columns: repeat(5, 1fr);
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
         grid-gap: 0px;
         margin: 0 auto;
         font-family: 'Fira Sans';
