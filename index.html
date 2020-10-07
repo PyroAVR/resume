@@ -17,7 +17,7 @@
                 <div class="leftright-page">
                     <div class="left">
                         <h1><span style="font-weight: 200;">Andy</span> <b>Meyer</b></h1>
-                        <p style="font-weight: 400; font-size: x-large;"><i>Available May-August 2020</i></p>
+                        <!--<p style="font-weight: 400; font-size: x-large;"><i>Available May-August 2020</i></p>-->
                     </div>
                     <div class="right">
                         <h2><span style="font-family: 'Fira Mono', monospace;color: orange">Computer</span> Engineer</h2>
@@ -29,47 +29,45 @@
                     <div class="left-sidebar">
                         <h3>Contact Information</h3>
                         <ul>
-                            <li>9 Summer Hill Drive</li>
-                            <li>Brockport, NY 14420</li>
-                            <li>+1 (585) 935-1669</li>
                             <li>ahm7197@rit.edu</li>
                         </ul>
-                        <h3>Spoken Languages</h3>
-                        <ul>
-                            <li>english</li>
-                            <li>limited spanish</li>
-                        </ul>
+                        <!--<h3>Spoken Languages</h3>-->
+                        <!--<ul>-->
+                            <!--<li>english</li>-->
+                            <!--<li>limited spanish</li>-->
+                        <!--</ul>-->
                         <h3>Programming Languages</h3>
-                        <h6>(by proficiency)</h6>
+                        <h6>(by proficiency, grayed languages ill-favored)</h6>
                         <ul>
-                            <li>C (and variants)</li>
+                            <li>C (embedded, application)</li>
                             <li style="color: gray;">Python</li>
                             <li>ARM Thumb 2</li>
                             <li>VHDL</li>
-                            <li>Swift</li>
-                            <li>Kotlin</li>
+                            <li style="color: gray;">Swift</li>
+                            <li style="color: gray;">MATLAB</li>
                         </ul>
                         <h3>Technical Skills</h3>
                         <ul>
                             <li>Linux</li>
                             <li>Git</li>
                             <li>Subversion</li>
+                            <li>GNU LD Scripts</li>
+                            <li><a href="https://mesonbuild.com/">Meson</a></li>
                         </ul>
                         <h3>APIs and Libraries</h3>
                         <ul>
+                            <li>POSIX epoll</li>
                             <li>TianoCore UEFI</li>
-                            <li>CUDA 9.1</li>
+                            <li>CUDA</li>
+                            <li>GTK+</li>
                             <li>Numpy</li>
                             <li>Matplotlib</li>
                             <li>SKLearn</li>
-                            <li>TensorFlow</li>
-                            <li>SparkJava</li>
-                            <li>GTK+</li>
                         </ul>
                     </div>
                     <div class="main-content">
                         <section class="main-section-entry">
-                            <h2>Work Experience</h2>
+                            <h2>Professional Experience</h2>
                             <div class="section-header">
                                 <div class="section-company">
                                     Apple, Inc.
@@ -103,6 +101,14 @@
                                     Wrote support code and new frameworks for
                                     several teams.
                                     </li>
+                                    <li>
+                                    Enacted overhauls of build system code for
+                                    improved speed and testability.
+                                    </li>
+                                    <li>
+                                    Pushed development efforts on Xcode build
+                                    speed and flexibility improvements.
+                                    </li>
                                 </ul>
                             </div>
 
@@ -135,7 +141,8 @@
                                 </div>
                                 <div class="section-date">
                                     <span class="date">August 2017 - May 2018</span>,
-                                    <span class="date">January - now</span>
+                                    <span class="date">January 2019 - May 2019</span>,
+                                    <span class="date">August 2020 - now</span>
                                 </div>
                                 <div class="section-location">
                                     Rochester, NY
@@ -148,7 +155,7 @@
                                -->
                             <div class="section-description">
                                 <ul>
-                                <li>Worked as a teaching assistant for Computer Science classes teaching Python and Java, as well as Computer Engineering classes teaching Assembly.</li>
+                                <li>Classes taught: Interfacing and Digital Electronics, Assembly Language Programming, Computer Science I &amp II</li>
                                 <li>Ran reviews, mentoring hours, and one-on-one sessions with students.</li>
                                 <li>Worked as an assistant systems administrator for Computer Engineering, working on assembly of new research computers and management thereof.</li>
                                 </ul>
@@ -156,7 +163,7 @@
                         </section>
 
                         <section class="main-section-entry">
-                            <h2>Personal Projects</h2>
+                            <h2>Notable Works</h2>
 
                             <div class="section-header">
                                 <div class="section-name">
@@ -167,37 +174,32 @@
                                 </div>
                             </div>
                             <div class="section-description">
-                                The missing <span style="font-family: 'Fira Mono', monospace;">include</span> for C - a modern, easy to use set of data structures essential to application development.
-                                Includes an array, two sets, and a hashmap all built on a common memory management structure.  Written in plain C for maximum portability and speed.
+                                The missing <span style="font-family: 'Fira Mono', monospace;">#include</span> for C - a modern, easy to use set of data structures essential to application development.
+                                Includes an array, two sets, and a hashmap all built on a common memory management structure.  Written in plain C for maximum portability and speed.  No external dependencies. 92% code coverage.
                             </div>
                             <div class="section-header">
                                 <div class="section-name">
-                                    <a href="http://chilipeppr.com/tinyg">Super Touch Plate</a>
+                                    <a href="https://wiki.rit.edu/display/P20123/Detailed+Design">Autonomous Search and Rescue</a>
                                 </div>
                                 <div class="section-link">
-                                    <a href="https://github.com/PyroAVR/widget-super-touchplate">Source Code</a>
+                                    <a href="https://github.com/P20123">Source Code</a>,
+                                    <a href="https://wiki.rit.edu/display/P20123/Detailed+Design">Website</a>
                                 </div>
                             </div>
                             <div class="section-description">
-                                Automatically touch-off calibrates machine
-                                coordinates using conductive touchplates. Offers
-                                feature-complete auto-homing and workpiece
-                                relocation on CNC mills using Chilipeppr.
+                                Senior Design project foucsed on the development of a fixed-wing autonomous aircraft to ease search and rescue missions by removing the need for helicopter search teams.
                             </div>
 
                             <div class="section-header">
                                 <div class="section-name">
-                                    VGA
+                                    TinyXPC
                                 </div>
                                 <div class="section-link">
-                                    <a href="https://github.com/PyroAVR/vga">VGA in Thumb2</a>
+                                    <a href="https://github.com/PyroAVR/tinyxpc">Source Code</a>
                                 </div>
                             </div>
                             <div class="section-description">
-                                Worked with a friend to bit-bang the VGA
-                                protocol on a Cortex-M0+ to display video on a
-                                computer monitor without the presence of a video
-                                accelerator or GPU.
+                                Fast, Lightweight data link layer communications protocol designed for embedded systems.  Features low overhead, automatic configuration, buffer synchronization, and configurable, automatic CRCs.  Developed for P20123's communications subsystem. Reference implementation in C runs anywhere. 85% code coverage.
                             </div>
                         </section>
 
