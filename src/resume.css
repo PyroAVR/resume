@@ -1,3 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pill-hdr {
+    @apply w-full content-center h-6 md:h-10 rounded py-1 flex flex-row flex-nowrap place-content-between items-stretch bg-gradient-to-r from-gray-800 to-gray-600 text-gray-100
+}
+.pill-content {
+    @apply h-full pl-2 flex flex-col place-items-start content-start
+}
+.pill {
+    @apply w-full grid grid-cols-1 rounded overflow-hidden shadow-lg content-start
+}
+.skill {
+    @apply rounded px-2 mx-0.5 my-0.5 bg-blue-400 text-sm md:text-base
+}
+.printonly {
+    display: none;
+}
+
 body { display: none;}
 @media only print {
     @page {
@@ -25,6 +45,14 @@ body { display: none;}
     }
     .leftcol,.rightcol {
          display: none;
+    }
+
+    .noprint {
+        display: none;
+    }
+
+    .printonly {
+        display: contents;
     }
 
     .page-title-header {
@@ -195,12 +223,8 @@ ul {
     padding-bottom: 0 auto;
 }
 
-.sidebar-page > .main-content {
-    display: flex;
-    flex-flow: column;
-}
-
 .main-content > .main-section-entry {
+    padding: 10px;
     width: 100%;
 }
 
