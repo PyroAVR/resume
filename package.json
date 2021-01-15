@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Website/Resume",
   "scripts": {
-    "prebuild": "mkdir dist",
+    "prebuild": "if [ ! -d dist ]; then mkdir dist; fi",
     "build": "NODE_ENV=production postcss src/resume.css -o dist/resume.css",
     "postbuild": "cp src/index.html dist/index.html"
   },
