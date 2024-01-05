@@ -40,20 +40,27 @@
                 <div class="ml-2 w-full flex flex-row flex-wrap flex-auto">
                     <div class="skill">C (embedded)</div>
                     <div class="skill">C (application)</div>
-                    <div class="skill">Python 3</div>
-                    <div class="skill">ARM/Thumb 2 Assembly</div>
-                    <div class="skill">ARMv8-M</div>
-                    <div class="skill">Bash/Shell</div>
-                    <div class="skill">VHDL</div>
+                    <div class="skill">FreeRTOS</div>
+                    <div class="skill">Python</div>
                     <div class="skill">Linux</div>
                     <div class="skill">Git</div>
-                    <div class="skill">ARMCC/LINK</div>
+                    <div class="skill">VHDL</div>
+                    <div class="skill">ARM toolchain</div>
                     <div class="skill">GNU toolchains</div>
-                    <div class="skill">CCRL/H</div>
+                    <div class="skill">Renesas toolchains</div>
+                    <div class="skill">LD scripts</div>
                     <a class="skill bg-gradient-to-r hover:from-green-400 hover:to-green-300 hover:shadow-2xl hover:text-gray-100" href="https://mesonbuild.com/">Meson</a>
                     <div class="skill">CAN/LIN</div>
-                    <div class="skill font-mono">Linux epoll</div>
-                    <div class="skill">PyTorch</div>
+                    <div class="skill">ISOTP/UDS</div>
+                    <div class="skill">UART</div>
+                    <div class="skill">SPI</div>
+                    <div class="skill">I2C</div>
+                    <div class="skill">Assembly Languages</div>
+                    <div class="skill">SPICE</div>
+                    <div class="skill">KiCAD</div>
+                    <!--<div class="skill">Bash/Shell</div>-->
+                    <!--<div class="skill font-mono">Linux epoll</div>-->
+                    <!--<div class="skill">PyTorch</div>-->
                     <!--<div class="skill">GTK+</div>-->
                     <!--<div class="skill">TianoCore UEFI</div>-->
                     <!--<div class="skill">Numpy</div>-->
@@ -65,35 +72,38 @@
                 <section class="mx-2 w-full grid grid-flow-row grid-cols-1 lg:flex lg:flex-row justify-center gap-x-1">
                     <div class="pill">
                         <div class="pill-hdr">
-                            <div class="pl-2 self-center justify-self-start">Tesla, Inc. (Vehicle Software/Bootloaders)</div>
+                            <div class="pl-2 self-center justify-self-start">Tesla, Inc. (Firmware Platforms/Bootloaders)</div>
                             <div class="text-sm self-center px-2 justify-self-end">August 2021-Now</div>
                         </div>
                         <div class="pill-content text-sm md:text-base">
+                          Currently leading improvements in critical manufacturing tools, while also supporting OTA update across all Tesla platforms and serving as the platform expert on Renesas, NXP, Infineon, and Melexis MCUs. Working with external suppliers worldwide for OTA integration.
+                          <!--
                             <p>
-                                Leading improvements in critical production and
-                                internal development tools.
+                                Leading improvements in critical manufacturing tools.
                             </p>
                             <p>
-                                Supporting Over-The-Air updates on ECUs across all Tesla platforms.
+                                Supporting Over-The-Air updates across all Tesla platforms.
                             </p>
                             <p>
-                                Supporting prototype efforts on resource-constrained, real-time systems using
-                                uncommon architectures.
+                                Supporting prototype RTOS development on resource-constrained systems.
                             </p>
                             <p>
                                 Platform expert on various mcus: RH850, RL78, S32K1, MLX16, TLE986, KEA.
                             </p>
                             <p>
-                                Working with remote teams and vendors in multiple countries including China, India, and Belgium.
+                                Experience in working with external suppliers worldwide.
                             </p>
+                          -->
                         </div>
                     </div>
                     <div class="pill">
                         <div class="pill-hdr">
-                            <div class="pl-2 self-center justify-self-start">Apple, Inc. (Mac Platform Bringup Engineer)</div>
+                            <div class="pl-2 self-center justify-self-start">Apple, Inc. (Mac Platform Bringup)</div>
                             <div class="text-sm self-center px-2 justify-self-end">Jun-Dec 2018, May-Aug 2019</div>
                         </div>
                         <div class="pill-content text-sm md:text-base">
+                          Supported Intel Machine Check Exception debug via writing a decoding framework. Enhanced remote, offline debug and logging in EFI firmware. Spearheaded Python 3 conversion and eased adoption via adaptation of legacy tools. Enhanced build system speed for EFI and Xcode.
+                          <!--
                             <p>
                                 Wrote a comprehensive decoding tool &amp
                                 framework for Intel Machine Check
@@ -115,20 +125,18 @@
                             <p>
                                 Pushed development efforts on Xcode build
                                 speed and flexibility improvements.
-                            </p>
+                            </p>-->
                         </div>
                     </div>
                     <div class="pill">
                         <div class="pill-hdr">
-                            <div class="pl-2 self-center justify-self-start">Assured Information Security (Machine Learning Intern)</div>
+                            <div class="pl-2 self-center justify-self-start">Assured Information Security (Machine Learning)</div>
                             <div class="text-sm self-center px-2 justify-self-end">May-Sept 2017</div>
                         </div>
                         <div class="pill-content text-sm md:text-base">
                             <p>
                                 Worked as a machine learning engineer and researcher
                                 for a security contract.
-                            </p>
-                            <p>
                                 Developed a verification and identification architecture for soft biometrics.
                             </p>
                             <p>
@@ -142,10 +150,11 @@
                     <div class="pill">
                         <div class="pill-hdr">
                             <div class="font-mono pl-2 self-center justify-self-start">alibc.containers</div>
-                            <div class="text-sm px-2  self-center justify-self-end">Fast, light data structures in ANSI C</div>
+                            <div class="text-sm px-2  self-center justify-self-end">Fast, light data structures in C</div>
                         </div>
                         <div class="pill-content text-sm md:text-base">
-                            <p>
+                          An educational project in developing data structures commonly used in introductory Computer Science classes without the aid of modern convenience languages.
+                            <!--<p>
                                 The missing <span style="font-mono">#include</span> for C - a modern, easy to use set of data structures essential to application development.
 
                             </p>
@@ -154,9 +163,8 @@
                             </p>
                             <p>
                                 Written in plain C for maximum portability and speed.  No external dependencies. 92% code coverage.
-                            </p>
+                            </p>-->
                             <a class="skill bg-gradient-to-r hover:from-green-400 hover:to-green-300 hover:shadow-2xl hover:text-gray-100 place-self-center noprint" href="https://github.com/PyroAVR/alibc.containers">Source Code</a>
-                            <p class="printonly">Links to source code and design are available at the addresses in the header.</p> 
                         </div>
                     </div>
                     <div class="pill">
@@ -165,8 +173,7 @@
                         </div>
                         <div class="pill-content text-sm md:text-base">
                             <p>
-                                Senior Design project foucsed on the development of a fixed-wing autonomous aircraft to ease search and rescue missions by removing the need for helicopter search teams.
-                                <div class="printonly">Links to source code and design are available at the addresses in the header.</div>
+                                Senior Design project foucsed on the development of a fixed-wing autonomous aircraft to ease search and rescue missions by removing the need for helicopter search teams. Contributed a small, but functional RTOS developed as part of the project in ~2 weeks.
                             </p>
                             <div class="flex flex-row flex-nowrap place-content-center justify-items-center place-self-center">
                                 <a class="skill bg-gradient-to-r hover:from-green-400 hover:to-green-300 hover:shadow-2xl hover:text-gray-100 noprint" href="https://github.com/P20123/k64_firmware">Source Code</a>
@@ -174,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pill">
+                    <!--<div class="pill">
                         <div class="pill-hdr">
                             <div class="pl-2 self-center justify-self-start">Online Resume and Portfolio</div>
                         </div>
@@ -188,31 +195,32 @@
                             </div>
                             <p class="printonly">Links to source code and design are available at the addresses in the header.</p> 
                         </div>
-                    </div>
+                    </div>-->
+                    <div class="printonly col-span-2">Links to source code and designs are available at: https://cv.andymeyer.xyz</div>
                 </section>
                 <h2 class="ml-2 text-xl font-light">Education</h2>
                 <section class="ml-2 w-full grid grid-flow-row grid-cols-1 md:grid-cols-2 justify-items-center items-stretch gap-x-1">
                     <div class="pill">
                         <div class="pill-hdr">
-                             <div class="text-sm pl-2 self-center justify-self-start">Master of Science</div>
-                             <div class="text-xs self-center px-2 justify-self-end pr-1">June 2022</div>
+                             <div class="text-sm pl-2 self-center justify-self-start">Master of Science, Computer Engineering</div>
+                             <div class="text-xs self-center px-2 justify-self-end pr-1">August 2022</div>
                         </div>
                         <div class="pill-content text-sm md:text-base">
                             <p>
-                                Rochester Institute of Technology
+                                Rochester Institute of Technology, Thesis in Adversarial Robustness
                             </p>
-                            <p>
+                            <!--<p>
                                 Thesis Topic: Adversarial Robustness &amp
                                 Generalization in Image Classification with Deep
                                 Neural Networks.
-                            </p>
+                            </p>-->
                             <a class="skill bg-gradient-to-r hover:from-green-400 hover:to-green-300 hover:shadow-2xl hover:text-gray-100 place-self-center noprint" href="https://scholarworks.rit.edu/theses/11248/">View Publication</a>
                             <div class="printonly">https://scholarworks.rit.edu/theses/11248/</div>
                         </div>
                     </div>
                     <div class="pill">
                         <div class="pill-hdr">
-                             <div class="text-sm pl-2 self-center justify-self-start">Bachelor of Science</div>
+                             <div class="text-sm pl-2 self-center justify-self-start">Bachelor of Science, Computer Engineering</div>
                              <div class="text-xs self-center px-2 justify-self-end pr-1">May 2021</div>
                         </div>
                         <div class="pill-content text-sm md:text-base">
