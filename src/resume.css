@@ -52,7 +52,7 @@ body { display: none;}
     }
 
     .printonly {
-        display: contents;
+        display: inherit;
     }
 
     .page-title-header {
