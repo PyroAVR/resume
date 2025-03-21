@@ -16,6 +16,26 @@
     display: none;
 }
 
+.sanelist {
+    @apply w-full grid grid-cols-1 grid-flow-row
+}
+
+.saneitem {
+  @apply w-full flex flex-row pr-2 mx-0
+}
+
+.saneitem > p {
+  flex-grow: 1;
+}
+
+.sanebullet::before {
+    --listdot: url("https://icongr.am/material/menu-right.svg?size=24&color=000000");
+    content: var(--listdot);
+    padding: 0;
+    margin: 0;
+    flex: none;
+}
+
 body { display: none;}
 @media only print {
     @page {
