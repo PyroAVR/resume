@@ -1,11 +1,11 @@
 {
   "name": "resume",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Website/Resume",
   "scripts": {
     "prebuild": "if [ ! -d dist ]; then mkdir dist; fi",
-    "build": "NODE_ENV=production postcss src/resume.css -o dist/resume.css",
-    "postbuild": "cp src/index.html dist/index.html"
+    "build": "NODE_ENV=production ./build.sh build",
+    "postbuild": "./build.sh post"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/PyroAVR/resume#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "postcss-cli": "^9.1.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^4.0.15"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.15",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1"
   }
 }

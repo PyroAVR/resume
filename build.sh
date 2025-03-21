@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
 function build() {
-    postcss src/resume.css -o dist/resume.css
+    npx postcss src/resume.css -o dist/resume.css
 }
 function copystatic() {
-    cp src/*.svg dist/
     cp src/*.html dist/
 }
 
