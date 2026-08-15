@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function build() {
-    npx postcss src/resume.css -o dist/resume.css
+    pnpm postcss src/resume.css -o dist/resume.css
 }
 function copystatic() {
     cp src/*.html dist/
